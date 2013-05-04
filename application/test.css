@@ -1,0 +1,312 @@
+/* !Structural Classes */
+* {
+	font-family: 'Arimo', sans-serif;
+}
+
+body {
+	margin:0px 0px 0px 0px;
+	background-color: whitesmoke;
+}
+
+#super-container {
+	width:80%;
+	min-width:320px;
+	max-width:1000px;
+	margin: auto;
+}
+
+#container, #homescreen-alert {
+	border:1px solid lightgrey;
+	margin:auto;
+	box-shadow: 2px 2px 3px rgba(0,0,0,0.05);
+	background-color: #e7eff3;
+	background-image: -webkit-repeating-linear-gradient(45deg, transparent, transparent 25px, rgba(255,255,255,.3) 25px, rgba(255,255,255,.3) 50px);
+}
+
+#container {
+	width: 40%;
+	min-width: 320px;
+	min-height: 480px;
+	margin: auto;
+	display: inline-block;
+	float:left;
+	position: relative;
+	z-index: 100;
+}
+
+#sidecar {
+	padding:10px;
+	position:fixed;
+	top: 0;
+	z-index: 0;
+	margin-top:20px;
+	width:40%;
+	display: inline-block;	
+	background-color: white;
+	box-shadow: 2px 2px 3px rgba(0,0,0,0.05);
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-top: 1px solid lightgrey;
+	border-right: 1px solid lightgrey;
+	border-bottom: 1px solid lightgrey;
+}
+
+#message {
+	font-size: 1.5em;
+	color: whitesmoke;
+	font-style: italic;
+	font-weight: bold;
+	text-align: center;
+}
+
+@media screen and (max-width: 640px) {
+	#sidecar {
+		display: none;
+	}
+}
+
+ 
+a #signup-button, #signup-button a, #login a #signup-button {
+	width: 75%;
+	height:1.2em;
+	padding: 0.6em;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	background-color: #82aada;
+	border-radius:5px;
+	text-decoration: none;
+	font-weight: 800;
+	color:white;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+	box-shadow:  1px 1px 1px rgba(0,0,0,0.2);
+}
+
+#content, #logout{
+	padding:5px;
+	text-decoration: none;
+}
+
+#login {
+	padding:2px 15px 5px 15px;
+	text-decoration:none;
+}
+
+#login a {
+	text-decoration: none;
+}
+
+#login, #content {
+	background-color: #fafafa;
+}
+
+#content {
+	border-top: 1px solid rgba(0,0,0,0.03);
+	border-bottom: 1px solid rgba(0,0,0,0.03);
+}
+
+#add-target {
+	margin:20px 0px 10px 0px;
+}
+
+#logout {
+	margin-top: 20px;
+	text-align: center;
+}
+
+header, header a {
+	text-align: center;
+	padding:5px 0px 10px 0px ;
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, p, ol {
+	margin:0px;
+}
+
+p, ol, ul, ul li {
+	font-family: 'Arimo', sans-serif;
+	margin-bottom:8px;
+	font-size: 0.8em;
+}
+
+h1, h1 a {
+	font-family: 'Leckerli One', cursive;
+	color:#4b5a77;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+	font-size: 2.5em;
+	text-decoration: none;
+}
+
+h2, h2 a, h3, h3 a {
+		font-family: 'Open Sans', sans-serif;
+}
+
+h2, h2 a {
+	display:inline-block;
+	font-size: 1em;
+	color:grey;
+	text-decoration: none;
+}
+
+h3, h3 a {
+	font-style: italic;
+	font-weight:100;
+	font-size: 0.8em;
+	color:grey;
+	text-decoration: none;
+}
+
+p, .name, .age {
+	font-family: 'Open Sans', sans-serif;
+}
+
+input, button {
+	font-size: 0.75em;
+}
+
+input {
+	display:inline-block;
+}
+
+#addTargetName {
+	width:65%;
+	color: grey;
+	font-size: 1em;
+	padding: 1%;
+}
+
+button {
+	color: grey;
+}
+
+#logoutButton {
+	margin-top: 10px;
+}
+
+p.aside {
+	color:lightgrey;
+	font-style: italic;
+	font-weight: 100;
+	font-size: 0.6em;
+	margin-top: 0px;
+}
+
+input.signup {
+	width:90%;
+	margin-bottom: 10px;
+}
+
+/* !Element Classes */
+.target-wrapper {
+	border:1px solid rgba(0,0,0,0.17);
+	margin: 5px 0px 10px 0px;
+	box-shadow: 2px 2px 4px rgba(0,0,0,0.09);
+}
+
+.target, .delete {
+	display:inline-block;	
+}
+
+.target {
+	margin: 10px;
+	width:80%;
+	min-width: 250px;
+}
+
+.expand {
+	padding: 10px 4px 10px 4px;
+	width:7%;
+	height: 100%;
+	min-width: 10px;
+	float:right;
+	color:rgba(0,0,0,0.17);
+	font-weight: bold;
+	text-align: center;
+	background-color: rgba(0,0,0,0.03);
+}
+
+.highUrgency {
+	background-color: #ffe7d3;
+}
+
+.medUrgency {
+	background-color: #ffffeb;
+}
+
+.lowUrgency {
+	background-color: #e0ffe0;
+}
+
+.name {
+	color:black;
+	font-weight: bold;
+}
+
+.age {
+	color:rgba(0,0,0,0.2);
+	font-size: 0.7em;
+}
+
+.drawer {
+	border:1px solid rgba(0,0,0,0.05);
+	background-color: rgba(255,255,255,0.3);
+	padding:5px;
+	clear: both;
+}
+
+.drawer-left {
+/* 	background-color: red; */
+	display: inline-block;
+	width:70%;
+}
+
+.email {}
+
+.edit {
+	text-align: right;
+}
+
+.drawer-right {
+	float: right;
+/* 	margin-left:70%; */
+	width: 30%;
+/* 	display: inline-block; */
+}
+
+.edit-name, .delete-contact {
+	color: rgba(0,0,0,0.5);
+	font-size: 0.7em;
+	text-align: center;
+	border: 1px solid rgba(0,0,0,0.5);
+	padding:4px 0px 4px 0px;
+	margin:2px 0px 2px 0px;
+	border-radius: 2px;
+	background-color: rgba(255,255,255,0.5);
+}
+
+/* !Utility Classes */
+.hidden {
+	display:none;
+}
+
+.center {
+	text-align: center;
+}
+
+#homescreen-alert {
+	margin-top: 10px;
+	background-color: #fff8e0;
+	font-size: 0.5em;
+	text-align: center;
+}
+
+.arrow-down {
+	width: 0; 
+	height: 0; 
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;	
+	border-top: 15px solid grey;
+	margin:auto;
+}
