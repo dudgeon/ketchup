@@ -2,7 +2,7 @@
 <!-- includes <head>, starts <body>, starts <div #container> -->
 <?php include_once('includes/head-test.php'); ?>  
 
-<header><h1>Yuna</h1></header>
+<header><h1>Ketchup Test</h1></header>
 
 <div id="login" class="hidden"> <!-- !LOGIN -->
 	<p>Ketchup is a simple, free web app to help you keep track of when you last spoke with people you care about; and to encourage you to reach out (catch up!) more often. <a href="about.php">Learn more</a>, or:</p>
